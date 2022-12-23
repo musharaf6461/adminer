@@ -13,9 +13,10 @@ build:
 deploy:
     context: mushraf6461/DEV
     replicas: 1
+    ingress: none
     port:
     - 8080
-    ingress: none
+    
 properties:
     revision : 31
     MFA_PROVIDER : none
