@@ -15,7 +15,7 @@ deploy:
     replicas: 1
     port:
     - 8080
-  
+    ingress: none
 properties:
     revision : 31
     MFA_PROVIDER : none
