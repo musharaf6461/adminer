@@ -11,14 +11,13 @@ build:
     image_template: adminer-4.8
 
 deploy:
-    context: mushraf6461/DEV
+    context: musharaf6461/DEV
     replicas: 1
-    ingress: none
     port:
     - 8080
-    
+  
 properties:
-    revision : 35
-    MFA_PROVIDER : none
+    revision : 27
+    MFA_PROVIDER : GA
     AUTHSECRET: 
         vault : ADMINER_AUTHSECRET
